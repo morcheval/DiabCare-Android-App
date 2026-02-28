@@ -1,0 +1,56 @@
+Voici exactement comment organiser votre dépôt :
+DiabCare-Android-App/
+├── .gitignore
+├── LICENSE
+├── README.md
+├── build.gradle.kts
+├── settings.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── app/
+│   ├── build.gradle.kts
+│   ├── proguard-rules.pro
+│   └── src/main/
+│       ├── AndroidManifest.xml
+│       ├── java/com/example/diabcare/
+│       │   ├── DiabCareApp.kt
+│       │   ├── MainActivity.kt
+│       │   ├── data/
+│       │   │   ├── api/
+│       │   │   │   ├── ApiClient.kt
+│       │   │   │   ├── FreeNutritionApi.kt
+│       │   │   │   └── NutritionixApi.kt
+│       │   │   ├── model/
+│       │   │   │   ├── Food.kt
+│       │   │   │   ├── Meal.kt
+│       │   │   │   ├── User.kt
+│       │   │   │   └── InsulinInjection.kt
+│       │   │   ├── repository/
+│       │   │   │   ├── DiabetesRepository.kt
+│       │   │   │   └── NutritionRepository.kt
+│       │   │   └── local/
+│       │   │       └── LocalFoodDatabase.kt
+│       │   ├── services/
+│       │   │   └── FoodAnalyzerService.kt
+│       │   ├── ui/
+│       │   │   ├── screens/
+│       │   │   │   ├── HomeScreen.kt
+│       │   │   │   ├── ScanFoodScreen.kt
+│       │   │   │   ├── ProfileScreen.kt
+│       │   │   │   └── InsulinLogScreen.kt
+│       │   │   └── components/
+│       │   │       └── BottomNavigationBar.kt
+│       │   └── viewmodel/
+│       │       └── MainViewModel.kt
+│       └── res/
+│           ├── values/
+│           │   ├── colors.xml
+│           │   ├── strings.xml
+│           │   ├── themes.xml
+│           └── xml/
+│               └── file_paths.xml
+└── screenshots/
+    ├── home-screen.png
+    ├── scan-screen.png
+    └── profile-screen.png
